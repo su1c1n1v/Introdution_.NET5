@@ -18,6 +18,11 @@ namespace NewFeaturesCSharp
             this.Name = name;
         }
 
+        public InitialSetter()
+        {
+
+        }
+
     }
 
     //We can change whatever we want to
