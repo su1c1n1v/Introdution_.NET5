@@ -1,12 +1,22 @@
 ﻿using System;
+string sentence = "Top Level Calls";
+PrintSentense(sentence);
+PrintDouble(20.2);
 
-namespace NewFeaturesCSharp
+static void PrintSentense(string sentence)
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
-    }
+    Console.WriteLine(sentence);
 }
+
+static void PrintDouble(double value)
+{
+    Console.WriteLine(value);
+}
+
+/*
+// You can create a classe under the code but it is not usual
+class MyClass
+{
+    public string MyClassName { get; set; }
+}
+*/
