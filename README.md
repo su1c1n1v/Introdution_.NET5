@@ -15,7 +15,9 @@
 - It is possible to add a class (under the code);
 - The application can only have one top level calls;
 
+### Initial Setter
 
+- It is only allowed to change the propriety when the object is created or inside of the class's construct (read-only);
 
 ### Local method
 
