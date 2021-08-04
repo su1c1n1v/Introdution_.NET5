@@ -16,7 +16,7 @@ static void PrintDouble(double value)
 }
 
 /*
-// You can create a classe under the code but it is not usual
+// You can create a classe, enum and struct under the code, but it is not usual
 class MyClass
 {
     public string MyClassName { get; set; }
