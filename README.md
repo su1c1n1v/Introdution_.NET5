@@ -63,12 +63,12 @@ public class InitialSetter
 ### Shortening Way to Create an Object
 
 ```C# 
-// Differente ways to create a object
+// Differente ways to create an object
 InitialSetter OBJ = new InitialSetter(1,"name");
 InitialSetter OBJ2 = new(2,"name");
 var OBJ3 = new InitialSetter(3,"name");
 
-// Incorrect way to create a object
+// Incorrect way to create an object
 var OBJ3 = new(4,"name");
 ```
 
@@ -83,3 +83,13 @@ var OBJ3 = new(4,"name");
 - It is a class with extra (read-only class);
 - The values can not be change (immutable);
 - When it is needed to change the values, it is necessary to create a new record;
+
+#### Difference between Classes and Records
+
+| Classes | Records |
+| :---: | :---: |
+| Reference type | Reference type |
+| The values of the data can be change | The values can not be change (immutable) |
+| It is necessary create a method Desconstruct | It already have implemented the Desconstruct |
+| ```Console.WriteLine($"Class: {classFeature}");// Class: NewFeaturesCSharp.ClassFeature``` | ```Console.WriteLine($"Record: {recordFeature}");// Record: RecordFeature { Name = name, Id = 2 }``` |
+

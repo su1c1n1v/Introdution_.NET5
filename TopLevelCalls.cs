@@ -1,8 +1,17 @@
 ﻿using NewFeaturesCSharp;
 using System;
 string sentence = "Top Level Calls";
+ClassFeature classFeature;
+RecordFeature recordFeature;
+
+classFeature = new("name", 1);
+recordFeature = new("name",2);
+RecordFeature record = new("name",2);
 PrintSentense(sentence);
 PrintDouble(20.2);
+Console.WriteLine($"Class: {classFeature}");
+Console.WriteLine($"Record: {recordFeature}");
+var (name, id) = recordFeature;
 
 
 static void PrintSentense(string sentence)
