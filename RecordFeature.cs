@@ -19,7 +19,20 @@ namespace NewFeaturesCSharp
         }
     }
 
-    //Declaration of a record
-    public record RecordFeature(string Name, int Id);
+    // Declaration of a record
+    public record RecordFeature(string Name, int Id);    
+    
+    // Another way to declaration of a record
+    public record RecordFeature2
+    {
+        internal int Name { get; init; }
+        internal int Id { get; init; }
+    }
+
+    // Another way to declaration of a record
+    public record RecordFeature3(int Id)
+    {
+        public int Name { get; init; }
+    }
 
 }

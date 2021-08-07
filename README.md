@@ -88,7 +88,14 @@ var OBJ3 = new(4,"name");
 | Classes | Records |
 | :---: | :---: |
 | Reference type | Reference type |
+| It is alowed to create methods | It is alowed to create methods |
+| It is allowed to inherit from a class |  It is allowed to inherit from a record  |
 | The values of the data can be change | The values can not be change (immutable) |
 | It is necessary create a method Desconstruct | It already have implemented the Desconstruct |
-| ```Console.WriteLine($"Class: {classFeature}");// Class: NewFeaturesCSharp.ClassFeature``` | ```Console.WriteLine($"Record: {recordFeature}");// Record: RecordFeature { Name = name, Id = 2 }``` |
+| * | ``` RecordFeature record = recordFeature with { Name = "name 2"}; // Creating a new Record using another record but change the value Name```|
+| ``` Console.WriteLine($"Class: {classFeature}");// Class: NewFeaturesCSharp.ClassFeature``` | ```  Console.WriteLine($"Record: {recordFeature}");// Record: RecordFeature { Name = name, Id = 2 }``` |
 
+---
+`
+Credits: Vinícius Costa 
+`

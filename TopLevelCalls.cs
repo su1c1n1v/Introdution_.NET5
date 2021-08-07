@@ -6,7 +6,6 @@ RecordFeature recordFeature;
 
 classFeature = new("name", 1);
 recordFeature = new("name",2);
-RecordFeature record = new("name",2);
 PrintSentense(sentence);
 PrintDouble(20.2);
 Console.WriteLine($"Class: {classFeature}");
